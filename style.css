@@ -3,6 +3,10 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-.centered {
+.bestFilms {
+  text-align: center;
+}
+
+.bestFilm {
   text-align: center;
 }

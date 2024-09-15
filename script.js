@@ -100,20 +100,17 @@ const topFilmsList = films.map((film) => {
   return film.top_rated_film;
 });
 
-// Создаем контейнер и класс для выравнивания по центру
-let container = document.createElement("div");
-container.classList.add("centered");
-// Добавляем контейнер на страницу
-document.body.appendChild(container);
 // Создаем элемент
 const textBestFilms = document.createElement("h2");
+textBestFilms.classList.add("bestFilms");
 const textBestFilm = document.createElement("p");
+textBestFilm.classList.add("bestFilm");
 // Устанавливаем текст
 textBestFilms.textContent = "Лучшие фильмы режиссёров:";
 textBestFilm.textContent = topFilmsList.join(", ");
 // Добавляем созданный элемент в контейнер
-container.appendChild(textBestFilms);
-container.appendChild(textBestFilm);
+mainContainer.appendChild(textBestFilms);
+mainContainer.appendChild(textBestFilm);
 //Стили для элементов
 textBestFilms.style.cssText =
   "font-Size: 20px; font-style: italic; font-family: Lucida Sans Unicode";
